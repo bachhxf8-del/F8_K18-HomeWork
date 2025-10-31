@@ -1,10 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab</title>
 </head>
 <body>
+    <ul>
+        <li><a href="../index.html">Danh sách khóa học</a></li>
+        <li><a href="./courses.html">Danh sách khóa học</a></li>
+        <li><a href="./submit.html">Trang gửi form POST</a></li>
+        <li><a href="./contact.html">Liên hệ – nhúng media</a></li>
+        <li><a href="./about.html">Tuỳ chọn</a></li>
+    </ul>
+    <form action="lab.html" method = "GET">
+        <label for="search">Nhập từ khóa: </label>
+        <input id="search" type="text" name="q" placeholder="Tìm kiếm..."><br>
+        <div>
+            <span>Trình độ: </span>
+            <label for="beginner">Beginner</label>
+            <input id="beginner" type="checkbox" value="Beginner" name="level">
+            <label for="intermediate">Intermediate</label>
+            <input id="intermediate" type="checkbox" value="Intermediate" name="level">
+            <label for="advanced">Advanced</label>
+            <input id="advanced" type="checkbox" value="Advanced" name="level">
+        </div>
 
+        <div>
+            <span>Hình thức: </span>
+            <label for="online">Online</label>
+            <input id="online" type="radio" name="mode">
+            <label for="offline">Offline</label>
+            <input id="offline" type="radio" name="mode">
+        </div>
+
+        <div>
+            <label for="major">Bạn muốn học: </label>
+            <select id="major" name="major">
+                <option value="FE">Frontend</option>
+                <option value="BE">Backend</option>
+                <option value="DO">DevOps</option>
+            </select>
+        </div>
+
+        <input type="submit">
+        <input type="reset">
+    </form>
 </body>
 </html>
