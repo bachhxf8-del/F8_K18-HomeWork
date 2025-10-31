@@ -1,10 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Submit</title>
 </head>
 <body>
+    <ul>
+        <li><a href="../index.html">Trang chủ</a></li>
+        <li><a href="./courses.html">Danh sách khóa học</a></li>
+        <li><a href="./lab.html">Phòng thí nghiệm – form GET</a></li>
+        <li><a href="./contact.html">Liên hệ – nhúng media</a></li>
+        <li><a href="./about.html">Tuỳ chọn</a></li>
+    </ul>
+    <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="post">
+        <label for="fullName">Họ tên</label>
+        <input type="text" placeholder="Họ tên" value="Hoàng Xuân Bách" name="Name" id="fullName">
+        <label for="email">Email</label>
+        <input type="text" placeholder="Email" value="bachhx@gmail.com" name="email" id="email">
+        <label for="pass">Email</label>
+        <input type="password" placeholder="Password" value="123456789" name="pass" id="pass">
+        <label for="age">Age</label>
+        <input type="number" placeholder="Age" value="21" name="age" id="age">
 
+        <label for="category">Category</label>
+        <select id="category" name="category">
+            <option>HTML/CSS</option>
+            <option value="JavaScript">JS</option>
+            <option value="ReactJS">React</option>
+        </select>
+
+        <input type="submit" value="Gửi">
+
+    </form>
 </body>
 </html>
