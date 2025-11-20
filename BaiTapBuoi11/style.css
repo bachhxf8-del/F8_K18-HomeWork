@@ -2,14 +2,26 @@ html{
     font-size: 62.5%;
 }
 body{
-    background-image: url('https://images.unsplash.com/photo-1579547621706-1a9c79d5c9f1?q=80&w=2070&auto=format&fit=crop');
+    /*background-image: url('https://images.unsplash.com/photo-1579547621706-1a9c79d5c9f1?q=80&w=2070&auto=format&fit=crop');*/
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /*background-size: cover;*/
+    /*background-position: center top;*/
 }
 .main-card {
-    margin: 3rem;
+    background-image: url('https://images.unsplash.com/photo-1579547621706-1a9c79d5c9f1?q=80&w=2070&auto=format&fit=crop');
+    /*margin: 3rem;*/
     padding: 3rem;
+    /*background: rgba(255, 255, 255, 0.4);*/
+    /*border-radius: 1.6rem;*/
+    /*text-align: center;*/
+    background-size: cover;
+    background-position: center;
+}
+.main {
+    /*margin: 1rem;*/
+    padding: 1rem;
     background: rgba(255, 255, 255, 0.4);
     border-radius: 1.6rem;
     text-align: center;
@@ -32,7 +44,7 @@ h1{
     margin-bottom: 5rem;
     box-sizing: border-box;
 }
-.cta > span {
+.cta button:first-child {
     /*width: 30rem;*/
     font-size: 1.8rem;
     font-weight: 600;
@@ -44,8 +56,23 @@ h1{
     text-align: center;
     box-sizing: border-box;
 }
-.cta > span:hover {
+.cta button:last-child {
+    /*width: 30rem;*/
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: #f05123;
+    padding: 2rem 2.4rem;
+    border-radius: 50rem;
+    margin: 2rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+.cta button:first-child:hover {
     background: #9333ea;
+}
+.cta button:last-child:hover {
+    background: #d8431c;
 }
 .logo-f8{
     width: 4rem;
@@ -63,7 +90,7 @@ h1{
     font-weight: 700;
 }
 .logo{
-    margin-top: 5rem ;
+    margin-top: 2rem ;
 }
 label{
     color: #1e293b;
@@ -79,13 +106,13 @@ label{
     color: #334155;
     font-size: 1.8rem;
     font-weight: 400;
+    line-height: 3rem;
 }
 .advice{
     padding: 0.5rem;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 15px;
-    margin-top: 2rem ;
-    margin-bottom: 4rem;
+    margin: 2rem 2rem 4rem 2rem;
 }
 #turn:checked ~ .advice{
     background-color: rgba(192, 132, 252, 0.35);
@@ -102,11 +129,12 @@ label{
 .v-icon{
     width: 1.6rem;
 }
-.footer {
+footer {
     padding-top: 2.4rem;
     padding-bottom: 1rem;
     text-align: center;
     background-color: white;
+
 }
 .footer-des {
     font-size: 1.6rem;
