@@ -149,41 +149,73 @@
             <div class="form-group">
                 <label for="name">Họ và tên <span class="required">*</span></label><br>
                 <input class="form-item" id="name" name="name" type="text" placeholder="Nguyễn Văn A" required>
+                <div class="tooltip-box">
+                    <div class="tooltip-content">Nhập họ và tên đầy đủ của bạn</div>
+                    <div class="tooltip-arrow"></div>
+                </div>
             </div>
             <div class="form-group">
                 <label for="phone-number">Số điện thoại <span class="required">*</span></label><br>
                 <input class="form-item" id="phone-number" name="phone_number" type="text" placeholder="0912345678" required>
+                <div class="tooltip-box">
+                    <div class="tooltip-content">Số điện thoại để chúng tôi liên hệ tư vấn</div>
+                    <div class="tooltip-arrow"></div>
+                </div>
             </div>
             <div class="form-group">
                 <label for="email">Email</label><br>
                 <input class="form-item" id="email" name="email" type="email" placeholder="example@gmail.com">
+                <div class="tooltip-box">
+                    <div class="tooltip-content">Email nhận thông tin khóa học (Không bắt buộc)</div>
+                    <div class="tooltip-arrow"></div>
+                </div>
             </div>
             <div class="form-group">
                 <p class="label-checkbox-group">Khóa học quan tâm <span class="required">*</span></p>
 
                 <div class="checkbox-item">
-                    <input type="checkbox" id="html-css" name="course" value="html-css">
+                    <input type="checkbox" id="html-css" name="course[]" value="html-css">
                     <label for="html-css">HTML & CSS</label>
+                    <div class="tooltip-box">
+                        <div class="tooltip-content">Khóa nền tảng xây dựng giao diện web</div>
+                        <div class="tooltip-arrow"></div>
+                    </div>
                 </div>
 
                 <div class="checkbox-item">
-                    <input type="checkbox" id="javascript" name="course" value="javascript">
+                    <input type="checkbox" id="javascript" name="course[]" value="javascript">
                     <label for="javascript">JavaScript</label>
+                    <div class="tooltip-box">
+                        <div class="tooltip-content">Ngôn ngữ lập trình cho web động</div>
+                        <div class="tooltip-arrow"></div>
+                    </div>
                 </div>
 
                 <div class="checkbox-item">
-                    <input type="checkbox" id="frontend" name="course" value="frontend">
+                    <input type="checkbox" id="frontend" name="course[]" value="frontend">
                     <label for="frontend">Front-end lộ trình</label>
+                    <div class="tooltip-box">
+                        <div class="tooltip-content">Lộ trình hoàn chỉnh trở thành Front-end Developer</div>
+                        <div class="tooltip-arrow"></div>
+                    </div>
                 </div>
 
                 <div class="checkbox-item">
-                    <input type="checkbox" id="reactjs" name="course" value="reactjs">
+                    <input type="checkbox" id="reactjs" name="course[]" value="reactjs">
                     <label for="reactjs">ReactJS</label>
+                    <div class="tooltip-box">
+                        <div class="tooltip-content">Thư viện JavaScript phổ biến nhất hiện nay</div>
+                        <div class="tooltip-arrow"></div>
+                    </div>
                 </div>
 
                 <div class="checkbox-item">
-                    <input type="checkbox" id="advise" name="course" value="advise">
+                    <input type="checkbox" id="advise" name="course[]" value="advise">
                     <label for="advise">Chưa rõ - cần tư vấn</label>
+                    <div class="tooltip-box">
+                        <div class="tooltip-content">Chúng tôi sẽ tư vấn lộ trình phù hợp với bạn</div>
+                        <div class="tooltip-arrow"></div>
+                    </div>
                 </div>
             </div>
         </div>
