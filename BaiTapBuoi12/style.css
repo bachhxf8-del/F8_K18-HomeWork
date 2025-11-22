@@ -288,22 +288,7 @@ footer {
     text-align: left;
     line-height: 3rem;
 }
-/*#modal-toggle:checked ~ .modal-overlay {*/
-/*    opacity: 1;*/
-/*    visibility: visible;*/
-/*}*/
-/*#modal-toggle:checked ~ .register-form {*/
-/*    opacity: 1;*/
-/*    visibility: visible;*/
-/*}*/
-/*#start-toggle:checked ~ .modal-overlay {*/
-/*    opacity: 1;*/
-/*    visibility: visible;*/
-/*}*/
-/*#start-toggle:checked ~ .start-form {*/
-/*    opacity: 1;*/
-/*    visibility: visible;*/
-/*}*/
+
 
 #modal-toggle:checked + .modal-overlay,
 #start-toggle:checked + .modal-overlay {
