@@ -334,7 +334,7 @@ footer {
     color: #6b21a8;
 
 }
-.start-footer-item:hover{
+.start-footer-item:first-child:hover, .start-footer-item:last-child:hover{
     text-decoration: underline;
 }
 
