@@ -188,7 +188,7 @@ label{
     /*border-top: 1px solid rgba(0,0,0,0.05);*/
 }
 .inner-text {
-    padding: 20px;
+    padding: 2rem;
     font-weight: 400;
     line-height: 2.4rem;
     color: #555;
@@ -213,6 +213,7 @@ label{
 #q2:checked ~ .faq-label,
 #q3:checked ~ .faq-label {
     background-color: rgba(192, 132, 252, 0.15) ;
+    border-radius: 1rem 1rem 0 0;
 }
 
 /*footer*/
