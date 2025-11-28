@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-bar img{
+    border-radius: 5px;
+}
+.header-bar{
+    /*position: relative;*/
+    border-bottom: 1px solid black;
+}
+.header-bar .header-bar--content{
+    position: relative;
+    width: 600px;
+    margin: auto;
+}
+.header-bar nav a{
+    text-decoration: none;
+    color: #333333;
+    padding: 10px;
+}
+.header-bar nav{
+    /*display: inline-block;*/
+    position: absolute;
+    top: 16px;
+    right: 0;
+}
+.main-menu > li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+.sub-menu{
+    position: absolute;
+    display: none;
+    /*top: 100%;*/
+    /*left: 0;*/
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    width: 170px;
+}
+.dropdown > a{
+    font-weight: bold;
+}
+.main-menu > li > .sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.sub-menu .sub-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+.main-menu li:hover > .sub-menu{
+    display: block;
+}
+.sub-menu > li{
+    position: relative;
+    display: block;
+    padding: 5px;
+}
+.triangle--1{
+    position: absolute;
+    width: 0;
+    border-color: #555555 transparent transparent transparent;
+    border-style: solid;
+    border-width: 2px;
+    top: 50%;
+    right: 1px;
+}
+.triangle--2{
+    position: absolute;
+    width: 0;
+    border-color: transparent transparent transparent #555555;
+    border-style: solid;
+    border-width: 2px 3px;
+    top: 50%;
+    right: 3px;
+}
+/*.sub-menu .sub-menu > li:hover{*/
+/*    background-color: #f5f5f5;*/
+/*}*/
+.level-2 > li:hover{
+    background-color: #f5f5f5;
+}
+.level-1 > li:hover{
+    background-color: #f5f5f5;
+}
+
+.sub-menu:hover ~ .dropdown > a{
+    color: #d62828;
+}
+.dropdown > a:hover {
+    color: #d62828;
+}
+
+.header-bar nav li > a:hover{
+    color: #d62828;
+}
+
+.header-bar nav li:hover > div > a{
+    color: #d62828;
+}
+
+.dropdown{
+    position: relative;
+    padding-bottom: 1px;
+    margin-right: 20px;
+}
+.underline:hover > div > a {
+    color: #d62828;
+    padding-bottom: 0.5px;
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    border-color: transparent transparent #d62828 transparent;
+}
