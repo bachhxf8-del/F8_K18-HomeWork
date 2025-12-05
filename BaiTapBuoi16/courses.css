@@ -1,6 +1,6 @@
 
 .courses{
-    width: 1596px;
+    /*width: 1596px;*/
     display: flex;
     gap: 30px;
     align-items: center;
@@ -12,6 +12,8 @@
     /*display: flex;*/
     padding: 50px;
     background-color: white;
+    border-radius: 12px;
+    border: 1px solid #F1F1F3;
 }
 .courses-item img{
     border-radius: 8px;

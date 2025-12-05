@@ -7,3 +7,45 @@
 body {
     background-color: #F7F7F8;
 }
+.title{
+    max-width: 1596px;
+    margin: 100px auto 60px auto;
+    /*position: relative;*/
+    /*display: flex;*/
+}
+.title h2 {
+    font-size: 38px;
+    font-weight: 600;
+    color: #262626;
+    line-height: 150%;
+}
+.title p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #59595A;
+}
+.title-des{
+    /*max-width: 933px;*/
+    /*margin: 0 auto;*/
+    flex-shrink: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.title .title-button{
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 20px;
+    border-radius: 6px;
+    border: 1px solid #F1F1F3;
+    background-color: #FCFCFD;
+    color: #262626;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    width: max-content;
+}
