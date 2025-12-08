@@ -1,4 +1,28 @@
 /*pricing*/
+#pricing .title-button{
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 12px;
+}
+#pricing .title .title-button button{
+    border-radius: 6px;
+    padding: 14px 30px;
+    /*color: #4C4C4D;*/
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    border: none;
+}
+.title-button button:first-child{
+    background-color: #FF9500;
+    color: white;
+    width: 132px;
+}
+.title-button button:last-child{
+    color: #4C4C4D;
+    background-color: white;
+    /*width: 132px;*/
+}
 .pricing{
     display: flex;
     /*margin: auto;*/
@@ -15,6 +39,7 @@
     border: 1px #F1F1F3 solid;
     padding: 50px 30px 30px 30px;
     gap: 50px;
+    flex: 1;
 }
 .available-features{
     background-color: #FFFFFF;
@@ -33,8 +58,10 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 150%;
-    width: 643px;
+    max-width: 643px;
+    width: 100%;
     border: none;
+    cursor: pointer;
 }
 .available-features--item{
     display: flex;
@@ -67,7 +94,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 643px;
+    width: 100%;
     border-radius: 6px;
     border: 1px solid #FFEACC;
     background-color: #FFF9F0;
@@ -89,10 +116,13 @@
 .pricing-item > div:nth-child(2) p{
     font-size: 20px;
     font-weight: 500;
-    line-height: 73%;
+    line-height: 100%;
     color: #4C4C4D;
 }
-
+.pricing-item > div:nth-child(2) p strong{
+    font-size: 80px;
+    line-height: 1;
+}
 .available-features div:first-child{
     display: flex;
     justify-content: center;
@@ -112,11 +142,17 @@
 /*FAQ*/
 .faq{
     display: flex;
-    gap: 120px;
+    /*gap: 120px;*/
     justify-content: center;
     border-radius: 12px;
     padding: 100px;
     background-color: white;
+}
+.faq > div:first-child{
+    max-width: 408px;
+    margin-right: 120px;
+    flex: 1;
+    /*min-width: 300px;*/
 }
 .faq h2{
     font-weight: 600;
@@ -130,7 +166,7 @@
     line-height: 150%;
     color: #333333;
 }
-.faq div:first-child button{
+.faq div:first-child > div > button{
     margin-top: 50px;
     border-radius: 8px;
     border: 1px #F1F1F3 solid;
@@ -138,9 +174,22 @@
     gap: 8px;
     background-color: white;
     color: #262626;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.questions{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 867px;
+    flex: 1;
+    min-width: 0;
 }
 .faq-item {
     /*text-align: left;*/
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     background: white;
@@ -152,10 +201,13 @@
     border: 1px solid #F1F1F3;
 }
 .faq-label{
+    /*width: 867px;*/
+    /*width: 100%;*/
     display: flex;
     justify-items: center;
     align-items: center;
     gap: 30px;
+    justify-content: space-between;
 }
 .icon-plus, .icon-close{
     width: 52px;
@@ -171,9 +223,10 @@
     color: #262626;
     line-height: 150%;
 }
-/*.faq-content{*/
-/*    display: none;*/
-/*}*/
+.faq-content{
+    display: none;
+}
+
 .inner-text{
     font-weight: 400;
     font-size: 18px;
@@ -185,12 +238,20 @@
 
 .inner-bottom{
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
     gap: 30px;
+    padding: 20px 30px;
+    border-radius: 8px;
+    border: 1px solid #F1F1F3;
+    background-color: #F7F7F8;
+    justify-content: space-between;
 }
-.inner-bottom > div{
-    flex: 1;
+.inner-bottom > div > p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #333333;
 }
 .inner-bottom button{
     display: flex;
@@ -199,15 +260,25 @@
     border-radius: 100px;
     padding: 0;
     background-color: white;
-    background-image: url("icons/arrow-right.svg");
+    background-image: url("icons/arrow-right-icon.svg");
     color: #4C4C4C;
     background-repeat: no-repeat;
     background-position: center;
     width: 56px;
     height: 56px;
+    /*margin-top: 0;*/
     border: none;
+    cursor: pointer;
 }
-
+input[type="checkbox"]:checked ~ .faq-label .icon-plus {
+    display: none;
+}
+input[type="checkbox"]:checked ~ .faq-label .icon-close {
+    display: flex;
+}
+input[type="checkbox"]:checked ~ .faq-content{
+    display: block;
+}
 /*.faq-label label button{*/
 /*    padding: 12px;*/
 /*    border-radius: 8px;*/
