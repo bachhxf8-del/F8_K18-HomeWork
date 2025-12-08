@@ -3,20 +3,26 @@
     /*width: 1596px;*/
     display: flex;
     gap: 30px;
-    align-items: center;
+    /*align-items: center;*/
     justify-content: center;
-    margin: auto;
+    /*margin: auto;*/
+    margin: 30px auto 0 auto;
+    /*flex: 1;*/
 }
 .courses-item{
-    flex-shrink: 1;
+    flex: 1;
+    /*flex-shrink: 1;*/
     /*display: flex;*/
     padding: 50px;
+
     background-color: white;
     border-radius: 12px;
     border: 1px solid #F1F1F3;
 }
 .courses-item img{
     border-radius: 8px;
+    height: 380px;
+    object-fit: cover;
     width: 683px;
 }
 .image-description{

@@ -1,0 +1,219 @@
+/*pricing*/
+.pricing{
+    display: flex;
+    /*margin: auto;*/
+    justify-content: center;
+    margin:80px auto 150px auto;
+    background-color: white;
+    border-radius: 12px;
+    padding: 80px;
+    gap: 30px;
+}
+.pricing-item{
+    background-color: #FCFCFD;
+    border-radius: 12px;
+    border: 1px #F1F1F3 solid;
+    padding: 50px 30px 30px 30px;
+    gap: 50px;
+}
+.available-features{
+    background-color: #FFFFFF;
+    border-radius: 14px 14px 0 0;
+    border: 1px #F1F1F3 solid;
+    padding: 40px;
+    gap: 30px;
+
+}
+.pricing-item button{
+    background-color: #FF9500;
+    border-radius: 0 0 8px 8px;
+    padding: 20px 24px;
+    gap: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+    width: 643px;
+    border: none;
+}
+.available-features--item{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px #F1F1F3 solid;
+    padding: 14px;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+.available-features div:last-child{
+    margin-bottom: 0;
+}
+.available-features--item p{
+    color: #4C4C4D;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.available-features--item img{
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    padding: 6px;
+    gap: 10px;
+}
+.pricing-item > div:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 643px;
+    border-radius: 6px;
+    border: 1px solid #FFEACC;
+    background-color: #FFF9F0;
+    padding: 12px 22px;
+    gap: 10px;
+}
+.pricing-item > div:first-child p{
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 169%;
+    color: #262626;
+}
+.pricing-item > div:nth-child(2){
+    margin: 50px 0 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pricing-item > div:nth-child(2) p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 73%;
+    color: #4C4C4D;
+}
+
+.available-features div:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #262626;
+    margin-bottom: 30px;
+}
+.pricing-item > div:nth-child(2) p strong{
+    color: #262626;
+    font-weight: 600;
+    font-size: 80px;
+}
+
+/*FAQ*/
+.faq{
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+    border-radius: 12px;
+    padding: 100px;
+    background-color: white;
+}
+.faq h2{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    color: #262626;
+}
+.faq h2 + p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #333333;
+}
+.faq div:first-child button{
+    margin-top: 50px;
+    border-radius: 8px;
+    border: 1px #F1F1F3 solid;
+    padding: 18px 24px;
+    gap: 8px;
+    background-color: white;
+    color: #262626;
+}
+.faq-item {
+    /*text-align: left;*/
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 12px;
+    /*margin-bottom: 1.5rem;*/
+    overflow: hidden;
+    padding: 30px 50px;
+    gap: 30px;
+    border: 1px solid #F1F1F3;
+}
+.faq-label{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+}
+.icon-plus, .icon-close{
+    width: 52px;
+    height: 52px;
+    border: none;
+}
+.icon-close{
+    display: none;
+}
+.faq-label > p{
+    font-weight: 500;
+    font-size: 20px;
+    color: #262626;
+    line-height: 150%;
+}
+/*.faq-content{*/
+/*    display: none;*/
+/*}*/
+.inner-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #4C4C4D;
+    border-top: 1px solid #F1F1F3;
+    padding: 50px 0 50px 0;
+}
+
+.inner-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.inner-bottom > div{
+    flex: 1;
+}
+.inner-bottom button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    padding: 0;
+    background-color: white;
+    background-image: url("icons/arrow-right.svg");
+    color: #4C4C4C;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 56px;
+    height: 56px;
+    border: none;
+}
+
+/*.faq-label label button{*/
+/*    padding: 12px;*/
+/*    border-radius: 8px;*/
+/*    gap: 10px;*/
+/*    background-color: #FFF4E5;*/
+/*}*/
+/*.faq-label label button img{*/
+/*    color: #262626;*/
+/*}*/

@@ -7,12 +7,14 @@
     display: flex;
     /*justify-content: space-between;*/
     gap: 20px;
-    align-items: center;
+    /*align-items: center;*/
     justify-content: center;
-    margin: auto;
+    margin: 20px auto 0 auto;
+
 }
 .benefit-item{
-    flex-shrink: 1;
+    flex: 1;
+    /*flex-shrink: 1;*/
     padding: 50px;
     background-color: white;
     border-radius: 12px;
@@ -20,17 +22,21 @@
 .benefit-description{
     font-size: 18px;
     color: #4C4C4D;
+    line-height: 150%;
+    font-weight: 400;
 }
 .benefit-number{
     font-size: 80px;
-    font-weight: bold;
+    font-weight: 700;
     display: flex;
     justify-content: end;
 }
 .benefit-title{
     font-weight: 600;
-    font-size: 18px;
+    font-size: 24px;
     margin: 50px 0 14px 0;
+    color: #333333;
+    line-height: 150%;
 }
 .benefit-icon{
     display: flex;
@@ -48,6 +54,7 @@
     border: 1px solid #F1F1F3;
     background-color: #FCFCFD;
     padding: 20px;
+    cursor: pointer;
 }
 .benefit-icon img{
     width: 17px;
