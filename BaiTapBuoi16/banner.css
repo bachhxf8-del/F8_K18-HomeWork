@@ -8,7 +8,7 @@
     justify-content: center;
     background-color: #FCFCFD;
     color: #1A1A1A;
-    width: 854px;
+    /*width: 854px;*/
     gap: 10px;
     border-radius: 11px;
     /*font-size: 48px;*/
@@ -62,13 +62,13 @@
     text-decoration: none;
 }
 .banner-action a:first-child{
-    width: 195px;
+    /*width: 195px;*/
     padding: 18px 24px;
     color: white;
     background-color: #FF9500;
 }
 .banner-action a:last-child{
-    width: 159px;
+    /*width: 159px;*/
     padding: 18px 24px;
     color: #262626;
     background-color: #FFFFFF;

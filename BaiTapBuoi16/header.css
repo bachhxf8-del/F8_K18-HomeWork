@@ -1,7 +1,21 @@
+.header-fixed{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #edd6a9;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #header-top{
+    /*position: relative;*/
+    /*top: 96px;*/
     background-color: #FF9500;
     height: 55px;
-    border-radius: 8px;
+    /*border-radius: 8px;*/
     font-size: 18px;
     color: white;
     display: flex;
@@ -12,13 +26,13 @@
     margin-left: 23px;
 }
 #header-bottom{
-    max-width: 1596px;
+    /*max-width: 1596px;*/
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
-    border-bottom: 1px solid #F1F1F3;
+    /*border-bottom: 1px solid #F1F1F3;*/
 }
 #header-bottom div{
     display: flex;
@@ -39,9 +53,9 @@
 #header-bottom ul{
     display: flex;
 }
-header{
-    margin: 20px 30px;
-}
+/*header{*/
+/*    margin: 20px 30px;*/
+/*}*/
 #header-bottom ul li{
     display: flex;
     align-items: center;
