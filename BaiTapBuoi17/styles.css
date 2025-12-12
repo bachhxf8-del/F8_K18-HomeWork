@@ -50,6 +50,7 @@ body {
     border: 1px solid #F1F1F3;
     background-color: #FCFCFD;
     color: #262626;
+    text-decoration: none;
     cursor: pointer;
     font-size: 14px;
     font-weight: 500;

@@ -6,6 +6,7 @@ footer {
 }
 .footer-content{
     display: flex;
+    /*flex-direction: column;*/
     justify-content: space-between;
     gap: 20px;
 }
@@ -15,9 +16,19 @@ footer {
 .footer-right--item {
     display: flex;
     gap: 6px;
-    /*align-items: center;*/
-    /*justify-content: center;*/
+    align-items: center;
+    justify-content: start;
     margin-bottom: 20px;
+}
+.footer-right--item > p > a{
+    text-decoration: none;
+    color: #262626;
+    font-size: 15px;
+    line-height: 150%;
+    font-weight: 400;
+}
+.footer-right--item > p > a:hover{
+    text-decoration: underline;
 }
 .footer-right > div > div:last-child {
     margin-bottom: 0;
@@ -36,6 +47,8 @@ footer {
     font-weight: 600;
     line-height: 150%;
     margin-bottom: 14px;
+    color: #262626;
+    /*text-decoration: none;*/
 }
 .footer-left--item > div{
     display: flex;
@@ -44,6 +57,14 @@ footer {
     /*align-items: center;*/
     /*justify-content: center;*/
     /*margin-bottom: 20px;*/
+}
+.footer-left--item > div > p > a{
+    color: #262626;
+    font-size: 18px;
+    text-decoration: none;
+}
+.footer-left--item > div > p > a:hover{
+    text-decoration: underline;
 }
 /*.footer-left--item > div:last-child{*/
 /*    flex-direction: row;*/
@@ -56,12 +77,18 @@ footer {
     flex-direction: row !important;
     gap: 14px;
 }
-.footer-left div:last-child  > div button{
+.footer-left > div:first-child{
+    display: flex;
+    gap: 30px;
+
+}
+.footer-left div:last-child  > div > a{
     width: 52px;
     height: 52px;
     border: 1px solid #F1F1F3;
     border-radius: 8px;
     padding: 14px;
+    line-height: 150%;
     background-color: #F7F7F8;
 }
 .logo-fb{
