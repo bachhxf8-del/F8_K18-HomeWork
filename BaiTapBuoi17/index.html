@@ -19,31 +19,48 @@
 <body>
 <!--header bar-->
 <!--<header>-->
-    <div id="header-top">
-        <a href="#">Free Courses 🌟 Sale Ends Soon, Get It Now</a>
-        <img src="icons/arrow-right.svg" width="24" alt="arrow right icon">
+<div id="header-top">
+    <a href="#">Free Courses 🌟 Sale Ends Soon, Get It Now</a>
+    <img src="icons/arrow-right.svg" width="24" alt="arrow right icon">
+</div>
+<input type="checkbox" id="menu-toggle" hidden>
+<label for="menu-toggle" class="modal-overlay"></label>
+<div class="menu-form">
+    <div class="menu-heading">
+        <div></div>
+        <label for="menu-toggle" class="close-btn"></label>
     </div>
-    <header class="header-fixed">
-        <div id="header-bottom">
+    <div class="menu-item">
+        <div><a href="#">Home</a></div>
+        <div><a href="#">Course</a></div>
+        <div><a href="#">About Us</a></div>
+        <div><a href="#">Pricing</a></div>
+        <div><a href="#">Contact</a></div>
+    </div>
+</div>
+<header class="header-fixed">
+    <div id="header-bottom">
+        <div>
+            <div id="header--logo"></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header--action">
             <div>
-                <div id="header--logo"></div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Courses</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="header--action">
                 <a href="#">Sign up</a>
                 <a href="#">Login</a>
             </div>
+            <label for="menu-toggle" class="menu"></label>
         </div>
-    </header>
+    </div>
+</header>
 
 <!--</header>-->
 

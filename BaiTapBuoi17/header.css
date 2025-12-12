@@ -86,7 +86,10 @@
     background-color: #F1F1F3;
     /*flex: 1.2;*/
 }
-
+.header--action{
+    display: flex;
+    gap: 20px;
+}
 .header--action a{
     text-decoration: none;
     /*display: flex;*/
@@ -102,7 +105,19 @@
     color: #262626;
     background-color: #F7F7F8;
 }
-.header--action a:last-child{
+.header--action > div > a:last-child{
     background-color: #FF9500;
     color: white;
+}
+.header--action label{
+    display: none;
+    background-image: url("icons/menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 34px;
+    height: 34px;
+}
+.menu-form{
+    display: none;
 }

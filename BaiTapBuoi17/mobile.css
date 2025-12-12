@@ -38,6 +38,86 @@
         gap: 8px;
         font-size: 14px;
     }
+    .header--action label{
+        display: block;
+    }
+    .menu-form{
+        /*display: none;*/
+        max-width: 332px;
+        flex-shrink: 1;
+        position: fixed;
+        border-radius: 50px 0 0 50px;
+        background-color: #ffffff;
+        /*padding: 10px;*/
+        gap: 10px;
+        top: 0;
+        left: 58px;
+        right: 0;
+        bottom: 0;
+        /*opacity: 0;*/
+        /*visibility: hidden;*/
+        display: none;
+        z-index: 999;
+    }
+    .menu-heading{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 0;
+        max-width: 305px;
+        margin: 16px 8px 25px 19px;
+        border-bottom: 1px solid #F1F1F3;
+    }
+    .menu-heading > div:first-child{
+        background-image: url("images/Logo.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+    .menu-heading > label{
+        background-image: url("icons/x-icon-menu.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 23px;
+        height: 23px;
+    }
+    .menu-item{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .menu-item > div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-item > div > a{
+        padding: 14px 0 14px 0;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        color: #262626;
+        line-height: 150%;
+    }
+    .menu-item > div:hover{
+        background-color: #F2F2F7;
+    }
+    .modal-overlay{
+        position: fixed;
+        inset: 0;
+        background: #00000080;
+        z-index: 998;
+        display: none;
+    }
+    #menu-toggle:checked + .modal-overlay{
+        display: block;
+    }
+    #menu-toggle:checked ~ .menu-form{
+        display: block;
+    }
 
     /*banner*/
     .banner-title{
