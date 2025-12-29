@@ -62,7 +62,7 @@ console.log(typeof isRonaldo)
 // Boolean([]) (true)
 
 // Part 6
-// const numbers = [4, 3, 1, 5, 1]
-// console.log(numbers[0])
-// console.log(numbers[4])
+const numbers = [4, 3, 1, 5, 1]
+console.log(numbers[0])
+console.log(numbers[4])
 // Because numbers already exists in memory, and when you assign a = numbers, a is set to reference that same memory location rather than creating a new copy.
