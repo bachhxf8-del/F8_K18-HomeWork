@@ -67,7 +67,7 @@ console.log(toFahrenheit(celsiu));
 // Lesson 6
 function getElectricityBill(n){
     if (n < 0){
-        return "Error! Please re-enter within the range of 1-12";
+        return "Error! Please enter a number greater than 0.";
     }
     else if (n <= 50){
         return 1678 * n;
@@ -82,5 +82,5 @@ function getElectricityBill(n){
         return 1678 * 50 + 1734 * 50 + 2014 * 100 + 2536 * (n - 200);
     }
 }
-let electricity = 78;
+let electricity = -11;
 console.log(getElectricityBill(electricity));
