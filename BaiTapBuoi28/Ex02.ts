@@ -3,7 +3,7 @@ interface  Employee {
     id: number;
     name: string;
     salary: number;
-    getSalary(): number;
+    getSalary: () => number;
 }
 
 // Create class FullTimeEmployee
@@ -51,3 +51,4 @@ e2.hoursWorked = 7;
 
 const employees: Employee[] = [e1, e2];
 console.log(calculateTotalSalary(employees));
+// 540000
