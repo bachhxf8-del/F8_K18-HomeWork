@@ -3,10 +3,10 @@ const btn = document.getElementById('btn');
 const list = document.getElementById('list');
 
 btn.addEventListener('click', () => {
-    const li = document.createElement("li");
-    if (input.value) {
-        li.textContent = input.value;
-        list.append(li);
+    const liE = document.createElement("li");
+    if (input.value.trim()) {
+        liE.textContent = input.value;
+        list.append(liE);
     }
     input.value = '';
 })
