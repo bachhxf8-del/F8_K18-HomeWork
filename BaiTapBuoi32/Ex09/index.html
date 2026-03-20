@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Advanced</title>
+
+    <style>
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            padding: 4px 8px;
+        }
+
+        .done-btn {
+            background: yellow;
+        }
+
+        .done-btn.active {
+            background: green;
+            color: white;
+        }
+
+        .delete-btn {
+            background: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Todo App</h2>
+
+<!-- Add -->
+<input id="input" type="text">
+<button id="addBtn">Add</button>
+
+<br><br>
+
+<!-- Search -->
+<input id="search" type="text" placeholder="Search">
+
+<br><br>
+
+<!-- Filter -->
+<label>
+    <input type="checkbox" id="filterDone">
+    Chỉ hiện việc đã done
+</label>
+
+<ul id="list"></ul>
+
+<script src="./main.js"></script>
+</body>
+</html>
